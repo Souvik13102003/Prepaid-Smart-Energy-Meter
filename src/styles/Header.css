@@ -1,0 +1,77 @@
+/* src/styles/Header.css */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .project-name h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #61dafb;
+  }
+  
+  /* Active tab styling */
+  .active-link {
+    color: #61dafb; /* Change the active tab color */
+    border-bottom: 2px solid #61dafb;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo img {
+      margin-bottom: 10px;
+    }
+  
+    .project-name h1 {
+      font-size: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-name h1 {
+      font-size: 18px;
+    }
+  
+    .nav-links a {
+      font-size: 14px;
+    }
+  }
+  

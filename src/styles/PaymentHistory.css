@@ -1,0 +1,101 @@
+/* src/styles/PaymentHistory.css */
+.payment-history-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .payment-history-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-options {
+    margin-bottom: 20px;
+  }
+  
+  .filter-options select,
+  .date-filter input {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  .date-filter {
+    margin-top: 10px;
+  }
+  
+  .date-filter label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .date-filter button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .date-filter button:hover {
+    background-color: #4fa3b1;
+  }
+  
+  .payment-history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .payment-history-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-history-item p {
+    margin: 5px 0;
+  }
+  
+  .payment-history-item span {
+    font-weight: bold;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination-button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .pagination-button.active,
+  .pagination-button:hover {
+    background-color: #61dafb;
+    color: white;
+    border-color: #61dafb;
+  }
+  
+  @media (max-width: 768px) {
+    .payment-history-container {
+      padding: 10px;
+    }
+  
+    .payment-history-heading {
+      font-size: 20px;
+    }
+  
+    .payment-history-item p {
+      font-size: 14px;
+    }
+  }
+  

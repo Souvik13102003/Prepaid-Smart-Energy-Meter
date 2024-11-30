@@ -1,0 +1,47 @@
+/* src/components/WarningMessage.css */
+
+/* Container to hold the warning message */
+.warning-container {
+    overflow: hidden; /* Prevents overflow */
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Styling for the zero-balance warning */
+  .warning-zero, .warning-low {
+    padding: 10px 0; /* Vertical padding for the message */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem; /* Base font size */
+    white-space: nowrap; /* Prevents text wrapping */
+    
+    right: 100%; /* Start completely off-screen to the right */
+    animation: marquee 10s linear infinite; /* Animation effect */
+  }
+  
+  /* Keyframes for scrolling animation */
+  @keyframes marquee {
+    0% { transform: translateX(100%); } /* Start position (off-screen right) */
+    100% { transform: translateX(-100%); } /* End position (off-screen left) */
+  }
+  
+  /* Specific styles for zero-balance warning */
+  .warning-zero {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+  }
+  
+  /* Specific styles for low-balance warning */
+  .warning-low {
+    background-color: #ffcc00; /* Yellow background */
+    color: #333; /* Dark text */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .warning-zero, .warning-low {
+      font-size: 0.9rem; /* Slightly smaller font size for mobile */
+      animation-duration: 12s; /* Slower animation for readability on mobile */
+    }
+  }
+  

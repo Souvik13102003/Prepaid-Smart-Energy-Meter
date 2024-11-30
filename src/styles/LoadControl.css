@@ -1,0 +1,153 @@
+/* src/styles/LoadControl.css */
+.load-control-wrapper {
+  position: relative;
+  padding: 20px;
+}
+
+.balance-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: right;
+  line-height: 1.5;
+  z-index: 10;
+  transition: all 0.4s ease;
+}
+
+.balance-info p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #43a047; /* Green color for labels */
+}
+
+.balance-info p span {
+  font-weight: normal;
+  color: #ef5350; /* Red color for values */
+}
+
+.load-control-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.load-control-heading {
+  color: #1976d2; /* Blue text */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1976d2; /* Blue underline */
+  padding-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.bulb-button {
+  padding: 18px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.bulb-button.on {
+  background-color: #43a047; /* Bright green when ON */
+}
+
+.bulb-button.off {
+  background-color: #ef5350; /* Vibrant red when OFF */
+}
+
+.bulb-button:hover {
+  transform: translateY(-5px);
+}
+
+.bulb-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .load-control-container {
+    padding: 70px 20px;
+  }
+
+  .balance-info {
+    top: 20px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for visibility */
+  }
+
+  .balance-info p {
+    font-size: 14px; /* Slightly smaller font for Balance and Units on smaller screens */
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px; /* Adjusted gap for better spacing on mobile */
+    margin-top: 30px; /* Maintain proper margin for small screens */
+  }
+
+  .bulb-button {
+    width: 100%;
+    font-size: 16px; /* Slightly smaller font for mobile */
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .balance-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: right;
+    line-height: 1.5;
+    z-index: 10;
+    transition: all 0.4s ease;
+  }
+
+  .balance-info p {
+    font-size: 12px; /* Reduce the size for very small screens */
+  }
+
+  .bulb-button {
+    padding: 12px 20px;
+    font-size: 14px; /* Adjust button size for smaller devices */
+  }
+}

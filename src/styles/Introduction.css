@@ -1,0 +1,115 @@
+/* src/styles/Introduction.css */
+.introduction-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    max-width: 800px;
+    height: 400px; /* Set fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 8px;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-arrow.left {
+    left: 0;
+  }
+  
+  .carousel-arrow.right {
+    right: 0;
+  }
+  
+  .project-details {
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+  
+  .components-section {
+    margin-bottom: 40px;
+  }
+  
+  .components-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .component-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .component-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .circuit-diagram {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .circuit-diagram-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .cost-table {
+    text-align: center;
+  }
+  
+  .cost-table table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .cost-table th, .cost-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .cost-table th {
+    background-color: #f4f4f4;
+  }
+  
+  @media (max-width: 768px) {
+    .components-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel-image {
+      height: 250px; /* Reduce height for smaller screens */
+    }
+  }
+  
